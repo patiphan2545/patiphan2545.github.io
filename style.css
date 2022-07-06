@@ -42,11 +42,30 @@ span.slogan{
     margin-bottom: 35px;
 }
 
-.social-img{
+.social-img ul{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.social-img ul li{
     display: inline;
     background: rgba(204, 204, 204, 0.5);
     padding: 10px;
     border: 10px;
     cursor: pointer;
     transition: background 150ms ease-in-out;
+}
+
+.social-img ul li:hover{
+    background: #ccc;
+}
+
+h5 {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
 }
