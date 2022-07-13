@@ -1,64 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <title>Patiphan.io</title>
-     <link href='https:fonts.googleapis.com/css?family=Kanit&subnet=thai,latin' rel='stylesheet' type='text/css'>
-     <style type=text/css>
-     body{
-          font-family: 'Kanit', sans-serif;
-     }
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-     h1{
-          text-align: center;
-          margin: auto;
-          font-size: 48px;
-          width: 300px;
-          border-bottom: 3px solid #333;
-     }
 
-     .img {
-          margin-top: 20px;
-          text-align: center;
-     }
 
-     .img img {
-          width: 150px;
-          height: 150px;
-          background: #333;
-          border: 2px solid #333;
-          border-radius: 50%;
-     }
+<section class="profile_area">
+  <div class="container">
+    <div class="profile">
+      <div class="profile_image">
+      <img src="https://instagram.fbkk5-7.fna.fbcdn.net/vp/2fa552a0f36c0957a6562ce60bd942ba/5D2AE9DA/t51.2885-19/s150x150/47020328_2224611101145707_7384891889729667072_n.jpg?_nc_ht=instagram.fbkk5-7.fna.fbcdn.net" alt="">
+    </div>
+    <div class="profile_info">
+      <div class="profile_info--top">
+        <h1>ohmilerr</h1>
+        <a href="#" class="edit">Edit Profile</a>
+        <a href="#" class="gear"><i class="fas fa-cog"></i></a>
+      </div>
+      <div class="profile_info--center">
+        <span><strong>402</strong> Posts</span>
+        <span><strong>146</strong> Followers</span>
+        <span><strong>83</strong> Following</span>
+      </div>
+      <div class="profile_info--bottom">
+        <strong>Miler</strong>
+        <br>
+        <p>Youtuber & Freelance Web Developer</p>
+        <a href="milerdev.com">milerdev.com</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
-     .text {
-          background: #fff;
-          -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
-          -moz-box-shaow: 0px 0px 5px 0px rgba(0,0,0,0,75);
-          box-shadow: 0px 0px 5px 0px rgba(0,0,0,0,75);
-          width: 500px;
-          margin: auto;
-          text-align: center;
-          margin-top: 20px;
-     }
-     
-     </style>
-
-</head>
-<body>
-     <h1>ประวัติส่วนตัว</h1>
-     <div class="img">
-          <img src="https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/244029088_4384040085042019_3212400207434365505_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHobgAbMNEAL4JUXJ5Z4a_fDxQiLmWU2V4PFCIuZZTZXpQcFggPVFTYxsl938RCxHx_tD-WXuClka8y4BpEsL2e&_nc_ohc=0tKM4_-AN5EAX8P493b&_nc_ht=scontent.fbkk5-7.fna&oh=00_AT_hyt80pJXF69yvdpy_nR4SfQ0vbYT5acPBTJTpcABppw&oe=62CAAE35" alt="" width="" height="">
-     </div>
-     <div class="text">
-          <span>ชื่อ-นามสกุล</span> : ปฏิภาณ วิลัยพิศ <br>
-          <span>ชื่อเล่น</span> : เวฟ <br>
-          <span>facebook</span> : ปฏิภาณ วิลัยพิศ <br>
-          <span>Email</span> : patiphan.w@kkumail.com <br>
-          <span>ระดับการศึกษาปัจจุบัน</span> : ระดับปริญญาตรี <br>
-          <span>ระกับการศึกษามัธยม</span> : มัธยมศึษาปีที่ 6 <br>
-          <span>จังหวัดที่อยู่อาศัย</span> : จังหวัดร้อยเอ็ด <br>
-          <span>Bio</span> : จังหวัดร้อยเอ็ด <br>
-          <span>ความสามารถทางคอมพิวเตอร์</span> : จังหวัดร้อยเอ็ด <br>
-     </div>
-</body>
-</html>
+<section class="tabs_area">
+  <div class="container">
+    <div class="tabs">
+      <div onclick="switchTab(event, 'tb_1')" class="tab-item active"><i class="fas fa-th"></i> Posts</div>
+      <div onclick="switchTab(event, 'tb_2')" class="tab-item"><i class="fas fa-tv"></i> IGTV</div>
+      <div onclick="switchTab(event, 'tb_3')" class="tab-item"><i class="far fa-bookmark"></i> Saved</div>
+      <div onclick="switchTab(event, 'tb_4')" class="tab-item"><i class="fas fa-tag"></i> Tags</div>
+    </div>
+    
+    <div class="tabs_content">
+      <div id="tb_1" class="tabs_content--item">
+        <div class="gallery_grid">
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+          <div class="grid-img">
+            <div class="grid-img-icon">
+              <span><i class="fas fa-heart"></i> 12</span>
+              <span><i class="fas fa-comment"></i> 5</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1554166693-4518329faec1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="tb_2" class="tabs_content--item tb_2">
+        <i class="fas fa-tv tb_2_icon"></i>
+        <h1>เริ่มแชร์ไปยัง IGTV</h1>
+        <p>สร้างช่องของคุณเองเพื่อเริ่มแชร์วิดีโอแบบยาวในแนวตั้งกับ <br> กลุ่มเป้าหมายบน Instagram</p>
+        <a href="#" class="tb_2_btn">เริ่มต้นใช้งาน</a>
+      </div>
+      <div id="tb_3" class="tabs_content--item tb_3">
+        เฉพาะคุณเท่านั้นที่สามารถดูสิ่งที่คุณบันทึกไว้ได้
+      </div>
+      <div id="tb_4" class="tabs_content--item tb_4">
+        มีผู้แท็ก
+      </div>
+    </div>
+  </div>
+</section>
